@@ -22,11 +22,11 @@ class CarTwo extends Car {
        } 
 
     isUsed(){
-            if (odometer > 2000){
-                return "(Adult)";
-            }else {
-                return odometer
-            }
+        if (this.odometer  > 2000){
+            return this.odometer + "(Used)";
+         }else {
+            return  'new'
+        }
        }        
 }
 
