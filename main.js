@@ -13,24 +13,20 @@ function showData(pic){
             break;
 
         case "two":                
-            // console.log(car2.isUsed())
             LoadCarData(car2);
             document.getElementById("odometerId").hidden=false;
-            document.getElementById("odometer").innerHTML=car2.odometer, isUsed();
-
+            document.getElementById("odometer").innerHTML=car2.isUsed();
             break;   
 
         case "three":                
             LoadCarData(car3);
             car3.getDetails();
-
             break;   
 
         case "four":                
             LoadCarData(car4);
             CarFour.getDetails(car4);
             break;  
-
 
         default:
             console.log('DEFAULTTTTTTT')   
@@ -45,7 +41,3 @@ function LoadCarData(c) {
     document.getElementById('engineType').innerHTML=c.engineType;   
     document.getElementById("odometerId").hidden=true;
 }
-
-
-
-
